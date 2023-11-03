@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+img {
+    pointer-events: none;
+}
+
+#game-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+body {
+    background: url("images/Level1.jpg") no-repeat;
+    background-size: 100%;
+}
+
+
+.startMenu {
+    margin: 0;
+    background: url("images/bg_menu.png");
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    left: 30%;
+    top: 16%;
+}
+
+.menu {
+    background-color: black;
+    height: 100vh;
+    opacity: 0;
+}
+
+#main1 {
+    position: absolute;
+    left: 28%;
+    top: 10%;
+    width: 55%;
+}
+
+.play {
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    width: 10%;
+}
+
+#playBtn {
+    cursor: pointer;
+    background-color: black;
+    height: 15%;
+    width: 10%;
+    position: absolute;
+    left: 43%;
+    top: 75%;
+    background: url("images/but_play.png") no-repeat;
+    background-size: 100%;
+    border: 0;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+#playBtn:focus {
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+#musicBtn {
+    cursor: pointer;
+    background-color: black;
+    height: 12%;
+    width: 8%;
+    position: absolute;
+    left: 88%;
+    top: 2%;
+    background: url("images/mute_icon.png") no-repeat;
+    background-size: 100%;
+    border: 0;
+}
+
+#musicBtnGame {
+    cursor: pointer;
+    background-color: black;
+    height: 12%;
+    width: 8%;
+    position: absolute;
+    left: 88%;
+    top: 2%;
+    background: url("images/mute_icon.png") no-repeat;
+    background-size: 100%;
+    border: 0px;
+}
+
+#black {
+    background-color: black;
+    width: 195.4vh;
+    height: 100vh;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.gameOver {
+    position: absolute;
+
+}
+
+.heart {
+    position: absolute;
+}
+
+#h2 {
+    padding-left: 100px;
+
+}
+
+#h1 {
+    padding-left: 200px;
+}
+
+.textArea {
+    position: absolute;
+    background-color: orange;
+    opacity: 0.8;
+    width: 48%;
+    height: 60%;
+    margin-top: -40%;
+    margin-left: 30%;
+    border-radius: 50px;
+    border: 4px solid black;
+    box-shadow: 1px 0px 3px 5px #fff;
+}
+
+.gameOver p {
+    font-size: 500%;
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 1px red;
+    text-align: center;
+    letter-spacing: 4px;
+    position: absolute;
+}
+
+#nice {
+    font-size: 470%;
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 1px red;
+    text-align: center;
+    letter-spacing: 3px;
+    position: absolute;
+    margin-top: -37%;
+    margin-left: 31.5%;
+    text-transform: uppercase;
+}
+
+.nextLevelPage img {
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 50%;
+    width: 5%;
+}
+
+#car1 {
+    margin-top: -28.5%;
+    margin-left: 50.5%;
+    width: 4%;
+}
+
+#first {
+    margin-top: -39%;
+    margin-left: 37%;
+}
+
+#last {
+    margin-top: -34.5%;
+    margin-left: 40.5%;
+}
+
+.gameOver img {
+    position: absolute;
+}
+
+#car {
+    width: 4%;
+    transform: rotate(120deg);
+    margin-top: -27%;
+    margin-left: 48%;
+}
+
+#ouch {
+    width: 7%;
+    margin-top: -29%;
+    margin-left: 55%;
+}
+
+#resBtn {
+    background: url("images/but_restart.png") no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 16%;
+    position: absolute;
+    margin-top: -18%;
+    margin-left: 49%;
+    border: 0;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+#resBtn:focus {
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+.weather {
+    position: absolute;
+    width: 10%;
+    height: 25%;
+    border-radius: 20px;
+    border: 4px solid black;
+    background-color: rgb(144, 117, 67);
+    z-index: 100;
+    margin: 0;
+    margin-top: -49%;
+    margin-left: 1%;
+    box-shadow: 1px 0px 3px 3px #fff;
+    text-align: center;
+
+}
+
+.weather img {
+    width: 90%;
+    margin: 0;
+    margin-top: -15px;
+}
+
+.weather .temp {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 230%;
+    margin-top: -8%;
+}
+
+.weather .city {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+#nextLevelBtn {
+    background: url("images/but_continue.png") no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 16%;
+    position: absolute;
+    margin-top: -18%;
+    margin-left: 47%;
+    border: 0;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <audio id="sounds">
+        <source src="Sound/ThemeMusic.mp3">
+    </audio>
+    <audio id="carSound">
+        <source src="Sound/carSound.mp3">
+    </audio>
+    <audio id="ReverseCarSound">
+        <source src="Sound/ReverseCarSound.mp3">
+    </audio>
+
+    <section id="startMenu" class="startMenu">
+        <section class="menu">
+        </section>
+        <img id="main1" src="images/logomain.png" alt="logo">
+        <section class="weather">
+            <img id="weatherStatus" src="" alt="status">
+            <p id="temp" class="temp"></p>
+            <p class="city">Baku</p>
+        </section>
+        <button id="playBtn"></button>
+        <button id="musicBtn"></button>
+    </section>
+    <section id="gameArea" style="display: none;">
+        <section id="game-canvas"></section>
+        <section id="hearts"></section>
+        <button id="musicBtnGame"></button>
+    </section>
+    <section id="nextLevelArea1" class="nextLevelPage" style="display: none;">
+        <section id="black"></section>
+        <section class="textArea"></section>
+        <p id="nice">Congratulations !</p>
+        <img src="images/parkZone.jpg" alt="">
+        <img id="car1" src="car.png" alt="">
+        <button id="nextLevelBtn"></button>
+    </section>
+    <section id="gemeOver" class="gameOver" style="display: none;">
+        <section id="black"></section>
+        <section class="textArea"></section>
+        <p id="first">YOU CRASHED</p>
+        <p id="last">YOUR CAR!</p>
+        <img id="car" src="car.png" alt="car">
+        <img id="ouch" src="images/baloon_mc.png" alt="ouchPng">
+        <button id="resBtn"></button>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.8/phaser.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
